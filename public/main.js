@@ -23,10 +23,10 @@ var pictionary = function() { //deklarojme variablin pictionarin i cili eshte si
     })
 
     canvas.on('mousemove', function(event) {// nqs un e leviz mousin dhe nqs drawing eshte true atehere un mund te vizatoj lirshem 
-        if (drawing === true) {
+        if (drawing === true) {//nqs ky kushti plotesohet 
             var offset = canvas.offset();
-        var position = {x: event.pageX - offset.left,
-                        y: event.pageY - offset.top};
+        var position = {x: event.pageX - offset.left,//pozicioni ne te djathte 
+                        y: event.pageY - offset.top};//pozicionimi lart sips x dhe y qe jane dy parametra 
         draw(position);// ketu theras draw si funksion me parameteer pozicion 
         }
     });
